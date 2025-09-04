@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="speaker" class="springdi_xml.bean.Speaker" />
+	
+	<!-- constructor injection -->
+	<bean id="tv_constuctor" class="springdi_xml.bean.TV">
+		<constructor-arg ref="speaker" />
+	</bean>
+
+	<!-- setter injection -->
+	<bean id="tv_setter" class="springdi_xml.bean.TV" scope="prototype">
+		<property name="speaker" ref="speaker" />
+		<property name="name" value="spring" />
+	</bean>
+
+</beans>

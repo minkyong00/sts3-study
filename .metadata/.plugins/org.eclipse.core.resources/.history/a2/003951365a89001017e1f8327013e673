@@ -1,0 +1,11 @@
+package springdi_anno.bean;
+
+import org.springframework.stereotype.Component;
+
+@Component("tv")
+public class TV {
+	
+	@AutoWired
+	private Speaker speaker;
+	
+}

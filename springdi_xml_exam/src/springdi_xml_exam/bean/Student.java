@@ -1,0 +1,38 @@
+package springdi_xml_exam.bean;
+
+public class Student {
+
+	private Score score;
+	private String name;
+
+	public Student() {
+	}
+
+	public Student(Score score, String name) {
+		this.score = score;
+		this.name = name;
+	}
+
+	public Score getScore() {
+		return score;
+	}
+
+	public void setScore(Score score) {
+		this.score = score;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return name + " 국어: " + score.getKor() + ", 영어: " + score.getEng() + ", 수학: " + score.getMath()
+			+ ", 총점: " + score.getSum() + ", 평균: " + score.getAvg();
+	}
+
+}

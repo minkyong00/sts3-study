@@ -1,0 +1,17 @@
+package hellospring.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class HelloSpring {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context
+			= new GenericXmlApplicationContext("hellospring/conf/beans.xml");
+		
+		context.getBean("hello");
+		
+	}
+	
+}

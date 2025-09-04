@@ -1,0 +1,24 @@
+package springdi_xml.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+import springdi_xml.bean.TV;
+
+public class TVMain {
+
+	private ApplicationContext context;
+	
+	public TVMain() {
+		this.context = new GenericXmlApplicationContext("springdi_xml/conf/applicationContext.xml");
+	}
+	
+	public static void main(String[] args) {
+		
+		TVMain tvMain = new TVMain();
+		
+		TV tv_constructor = (TV)tvMain.context.getBean("tv_constructor");
+		
+	} // main
+	
+} // class

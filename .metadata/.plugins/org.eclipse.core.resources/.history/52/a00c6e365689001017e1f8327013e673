@@ -1,0 +1,11 @@
+package springdi_xml.main;
+
+public class TVMain {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

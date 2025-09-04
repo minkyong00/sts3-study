@@ -1,0 +1,5 @@
+package hellospring.bean;
+
+public class Hello {
+
+}

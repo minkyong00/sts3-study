@@ -1,0 +1,13 @@
+package springdi_anno.bean;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("tv")
+public class TV {
+	
+	// 자동 주입
+	@Autowired 
+	private Speaker speaker;
+	
+}

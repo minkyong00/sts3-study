@@ -1,0 +1,5 @@
+package springdi_anno.bean;
+
+public class Speaker {
+
+}

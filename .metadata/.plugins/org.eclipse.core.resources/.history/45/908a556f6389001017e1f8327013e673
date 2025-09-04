@@ -1,0 +1,11 @@
+package springdi_anno_exam.main;
+
+public class StudentMain {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

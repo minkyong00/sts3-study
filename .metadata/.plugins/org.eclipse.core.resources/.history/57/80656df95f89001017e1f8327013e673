@@ -1,0 +1,18 @@
+package springdi_xml_exam.bean;
+
+public class Student {
+	
+	private Score score;
+	private String name;
+	
+	public Student() {
+	}
+
+	public Student(Score score, String name) {
+		this.score = score;
+		this.name = name;
+	}
+
+	
+	
+}

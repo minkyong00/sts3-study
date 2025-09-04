@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;springdi_anno_exam/src/springdi_anno_exam.bean&apos;&#x0D;&#x0A;- Original project: &apos;springdi_xml_exam&apos;&#x0D;&#x0A;- Destination element: &apos;springdi_anno_exam/src/springdi_anno_exam.bean&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     springdi_xml_exam.bean.Score.java&#x0D;&#x0A;     springdi_xml_exam.bean.Student.java" description="Copy compilation units" destination="=springdi_anno_exam/src=/optional=/true=/=/maven.pomderived=/true=/&lt;springdi_anno_exam.bean" element1="/src=/optional=/true=/=/maven.pomderived=/true=/&lt;springdi_xml_exam.bean{Score.java" element2="/src=/optional=/true=/=/maven.pomderived=/true=/&lt;springdi_xml_exam.bean{Student.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1756971881926" units="2" version="1.0"/>
+</session>

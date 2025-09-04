@@ -1,0 +1,5 @@
+package springdi_xml_exam.bean;
+
+public class Student {
+
+}

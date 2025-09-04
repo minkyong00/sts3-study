@@ -1,0 +1,18 @@
+package springdi_anno.bean;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component("tv")
+public class TV {
+	
+	// autoWired: 자동 주입
+	
+	
+	@Autowired
+	@Qualifier("samsungspeaker")
+//	@Qualifier("lgspeaker")
+	private Speaker speaker;
+	
+}

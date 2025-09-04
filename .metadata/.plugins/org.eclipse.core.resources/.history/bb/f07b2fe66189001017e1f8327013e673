@@ -1,0 +1,20 @@
+package springdi_xml_exam.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+import springdi_xml_exam.bean.Student;
+
+public class StudentMain {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context 
+			= new GenericXmlApplicationContext("springdi_xml_exam/conf/applicationContext.xml");
+		
+		Student studentHong = (Student)context.getBean("studnetHong");
+		System.out.println(student);
+		
+	}
+	
+}

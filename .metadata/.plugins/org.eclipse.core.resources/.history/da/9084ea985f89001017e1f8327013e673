@@ -1,0 +1,11 @@
+package springdi_xml_exam.bean;
+
+public class Score {
+
+	private int eng;
+	private int math;
+	private int sum;
+	private int avg;
+	
+	
+}
