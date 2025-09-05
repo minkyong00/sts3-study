@@ -15,11 +15,6 @@ public class Student {
 	public Student() {
 	}
 
-	public Student(Score score, String name) {
-		this.score = score;
-		this.name = name;
-	}
-
 	public Score getScore() {
 		return score;
 	}

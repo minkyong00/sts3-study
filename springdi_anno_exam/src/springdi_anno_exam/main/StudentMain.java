@@ -16,7 +16,7 @@ public class StudentMain {
 		printStudentScore("강감찬", 90, 90, 90, context);
 		printStudentScore("이순신", 80, 80, 80, context);
 		
-	}
+	} // main
 	
 	private static void printStudentScore(String name, int kor, int eng, int math, ApplicationContext context) {
 		Student student = (Student)context.getBean("student");

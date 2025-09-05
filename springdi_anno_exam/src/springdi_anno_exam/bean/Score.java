@@ -16,14 +16,6 @@ public class Score {
 	public Score() {
 	}
 
-	public Score(int kor, int eng, int math, int sum, int avg) {
-		this.kor = kor;
-		this.eng = eng;
-		this.math = math;
-		this.sum = sum;
-		this.avg = avg;
-	}
-
 	public int getKor() {
 		return kor;
 	}
