@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="article">
+	
+	<select id="listArticle" resultType="Article">
+		select * from article
+	</select>
+
+	<select id="getArticle" parameterType="int" resultType="Article">
+		select * from article where aid=#{aid}
+	</select>
+	
+	<insert id="insertArticle" parameterType="Article">
+		insert into article values(seq_article.nextval, #{atitle}, #{acontent}, #{mid})
+	</insert>
+
+	<update id="updateArticle" parameterType="Article">
+		update article set atitle=#{atitle}, acontent=#{acontent} where aid=#{aid}
+	</update>
+	
+	<delete id="deleteArticle" parameterType="int">
+		delete article where aid=#{aid}
+	</delete>
+
+</mapper>

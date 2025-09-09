@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="member">
+	
+	<select id="listMember" resultType="Member">
+		select * from member
+	</select>
+
+	<select id="getMember" parameterType="String" resultType="Member">
+		select * from member where mid=#{mid}
+	</select>
+	
+	<insert id="insertMember" parameterType="Member">
+		insert into member values(#{mid}, #{mname})
+	</insert>
+
+	<update id="updateMember" parameterType="Member">
+		update member set mname=#{mname} where mid=#{mid}
+	</update>
+	
+	<delete id="deleteMember" parameterType="String">
+		delete member where mid=#{mid}
+	</delete>
+
+</mapper>

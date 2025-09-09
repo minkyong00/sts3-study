@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"   
+                               "http://mybatis.org/dtd/mybatis-3-config.dtd">
+                               
+<configuration>
+	
+	<typeAliases>
+		<typeAlias alias="Member" type="springaop_exam.model.Member" />
+		<typeAlias alias="Article" type="springaop_exam.model.Article" />
+	</typeAliases>
+	
+	<mappers>
+		<mapper resource="springaop_exam/conf/Member.xml" />
+		<mapper resource="springaop_exam/conf/Article.xml" />
+	</mappers>
+	
+</configuration>
