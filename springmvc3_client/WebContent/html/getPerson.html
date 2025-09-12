@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>getPerson</title>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/person.js"></script>
+</head>
+<body>
+<h1>PERSON 정보 확인</h1>
+<table>
+	<tr><th>번호</th><td id="pid"></td></tr>
+	<tr><th>이름</th><td id="name"></td></tr>
+	<tr><th>나이</th><td id="age"></td></tr>
+</table>
+<p>
+	<input type="button" value="목록" onclick="location.href='/html/listPerson.html';" />&nbsp;
+	<input type="button" value="수정" onclick="person.updatePerson()" />&nbsp;
+	<input type="button" value="삭제" onclick="person.deletePerson();" />
+</p>
+
+<script>
+	person.getPerson(new URLSearchParams(window.location.search).get("pid"));
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

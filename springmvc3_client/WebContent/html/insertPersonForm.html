@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>insertPersonForm</title>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/person.js"></script>
+</head>
+<body>
+<h1>PERSON <span id="insertSpan">등록</span>폼</h1>
+<table>
+	<tbody>
+		<tr>
+			<td>번호</td><td id="pidTd"><input type="text" name="pid" /></td>
+		</tr>
+		<tr>
+			<td>이름</td><td><input type="text" name="name" /></td>
+		</tr>
+		<tr>
+			<td>나이</td><td><input type="text" name="age" /></td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	<input type="button" value="목록" onclick="location.href='/html/listPerson.html';" />&nbsp;
+	<input type="button" id="insertBtn" value="등록" onclick="person.insertPerson();" />
+</p>
+
+<script>
+	const params = new URLSearchParams(window.location.search);
+	if(params.get("isEdit")=='Y'){
+		person.setInsertPersonForm(params.get("pid"));
+	}
+</script>
+
+</body>
+</html>

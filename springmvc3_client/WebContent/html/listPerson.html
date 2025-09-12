@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>listPerson</title>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/person.js"></script>
+</head>
+<body>
+<h1>PERSON 리스트</h1>
+<table>
+	<thead>
+		<tr><th>번호</th><th>이름</th><th>나이</th></tr>
+	</thead>
+	<tbody>
+	</tbody>
+</table>
+<p><input type="button" value="등록" onclick="location.href='/html/insertPersonForm.html'" /></p>
+
+<script>person.listPerson();</script>
+</body>
+</html>

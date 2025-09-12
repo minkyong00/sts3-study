@@ -1,5 +1,0 @@
-package springdi_xml.bean;
-
-public class Speaker {
-
-}
